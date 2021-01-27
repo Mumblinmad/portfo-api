@@ -8,11 +8,13 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
+      //Set by handlechange, called from NavBar
       mode:'home'
     }
     this.handleChange = this.handleChange.bind(this);
   }
 
+  //NavBar controls state.mode, display receives Display as props
   handleChange = (newMode) => {
     this.setState({mode:newMode})
     console.log(this.state.mode)
