@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Home from './Home'
 import Portfolio from './Portfolio';
+import Info from './Info'
+import More from './More'
 
 class Display extends Component {
     
@@ -17,6 +19,14 @@ class Display extends Component {
 
             case 'port':
                 return(<Portfolio className={this.props.className} />);
+                break;
+
+            case 'info':
+                return(<Info className={this.props.className}/>)
+                break;
+
+            case 'more':
+                return(<More className={this.props.className}/>)
                 break;
 
            
