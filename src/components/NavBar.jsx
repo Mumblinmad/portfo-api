@@ -11,7 +11,7 @@ class NavBar extends Component {
         return <nav>
             <a onClick={this.handleClick} id="home" href="#">Home</a>
             <a onClick={this.handleClick} id="port" href="#">Port</a>
-            <a onClick={this.handleClick} id="info" href="#">Info</a>
+            <a onClick={this.handleClick} id="info" href="#">About</a>
             <a onClick={this.handleClick} id="more"href="#">More</a>
         </nav>;
     }
