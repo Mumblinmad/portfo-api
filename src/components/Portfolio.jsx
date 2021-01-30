@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import Project from './Project';
-import PortDisplay from './PortDisplay'
+
 
 
 class Portfolio extends Component {
@@ -41,8 +40,7 @@ class Portfolio extends Component {
                 let elem = <button id={projList[i].id} onClick={this.handleClick}> {projList[i].Title}</button>
                 renderList.push(elem)
             }
-            for(let i in projList){
-                console.log()
+            
             
             var dProj = this.state.displayedProject
                     return ( 
@@ -61,7 +59,7 @@ class Portfolio extends Component {
             </div> );
 
                 
-            }
+            
         }
     
         else{
