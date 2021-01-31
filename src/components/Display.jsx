@@ -9,7 +9,6 @@ class Display extends Component {
     //Pages will Be Home, Portfolio, About, Contact
 
     render() { 
-        console.log(this.props.mode);
        switch(this.props.mode){
            
 
