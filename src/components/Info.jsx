@@ -17,7 +17,7 @@ class Info extends Component {
                     <h1>Mississppi State University</h1>
                     <p>August 2016 - May 2020</p>
                     <h3>Computer Science</h3>
-                </div>
+                </div> 
                 <div className="portfo edu">
                     <h1>Mongo DB Online University</h1>
                     <p>January 2021 - Febraury 2021</p>
