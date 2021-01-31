@@ -44,7 +44,7 @@ class Portfolio extends Component {
             
             var dProj = this.state.displayedProject
                     return ( 
-            <div className={"port"+this.props.mode}>
+            <div className={"port "+this.props.mode}>
             <h1>Portfolio</h1>
                 <div className="buttonBox">
                 {renderList}
@@ -64,9 +64,9 @@ class Portfolio extends Component {
     
         else{
         
-        return ( <div className={"port"+this.props.mode}>
+        return ( <div className={"port "+this.props.mode}>
             <h1>Portfolio</h1>
-            <p>Laoding.... </p>
+            <p>Loading.... </p>
         </div> );}
     }
 }
