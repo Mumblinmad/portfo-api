@@ -61,5 +61,5 @@ class Info extends Component {
         );
     }
 }
-
+ 
 export default Info;
