@@ -2,24 +2,15 @@ import React, { Component } from 'react';
 
 class Info extends Component {
     render() {
-<<<<<<< HEAD
-        const skills = ["Html","Css","Git","Sass","Javascript","React","Node.js","Mysqli","Mongo Db","Python","C++","Blender","Figma","Unity"];
-=======
         const skills = ["Html","Css","Sass","Figma","Git","Javascript","React","Node.js","Mysqli","Mongo Db","C++","Python","Unity","Blender"];
          
->>>>>>> 244f878b00350b3ffeb4153b83f06cca4d0454c4
         var skillList = skills.map(skill => <li>{skill}</li>)
 
         return (
             <div className={'info '+this.props.className}>
                 <h1>About</h1>
-<<<<<<< HEAD
-
-            <article className="education">
-=======
             <div className="flexColumn">
             <article className="card education">
->>>>>>> 244f878b00350b3ffeb4153b83f06cca4d0454c4
                 <h1>Education</h1>
                 <div className="flexRow">
                 <div className="portfo edu">
@@ -34,29 +25,6 @@ class Info extends Component {
                 </div>
                 </div>
             </article>
-<<<<<<< HEAD
-            <article className="skillList">
-                <h1>Skills</h1>
-                <ul>
-                    {skillList}
-                </ul>
-            </article>
-            <article className="employment">
-                <h1>Employment</h1>
-                <div className="flexRow">
-                <div className="emp">
-                    <h1>Position</h1>
-                    <p>When - Then</p>
-                    <ul>
-                        <li>One responsibility</li>
-                        <li>Two responsibility</li>
-                        <li>Three responsibility</li>
-                    </ul>
-                </div>
-                <div className="emp">
-                    <h1>Position</h1>
-                    <p>When - Then</p>
-=======
             <article className="card employment">
                 <h1>Employment</h1>
                 <div className="flexRow">
@@ -73,7 +41,6 @@ class Info extends Component {
                     <h1>Server</h1>
                     <p>Zea Rotisserie & Bar</p>
                     <p>September 2020 - Present</p>
->>>>>>> 244f878b00350b3ffeb4153b83f06cca4d0454c4
                     <ul>
                         <li>One responsibility</li>
                         <li>Two responsibility</li>
@@ -83,8 +50,6 @@ class Info extends Component {
                 </div>
             </article>
             </div>
-<<<<<<< HEAD
-=======
             <article className="card skillList">
                 <h1>Skills</h1>
                 <ul>
@@ -93,7 +58,6 @@ class Info extends Component {
             </article>
             
             </div>
->>>>>>> 244f878b00350b3ffeb4153b83f06cca4d0454c4
         );
     }
 }

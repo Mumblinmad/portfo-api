@@ -50,9 +50,6 @@ nav{
 
 }
 
-<<<<<<< HEAD
-
-=======
 nav > a{
   text-align: center;
   background-color: var(--ivory);
@@ -64,7 +61,6 @@ nav > a{
   font-weight: bolder;
   box-shadow:1px 1px 1px inset;
 }
->>>>>>> 244f878b00350b3ffeb4153b83f06cca4d0454c4
 
 
 .home{
@@ -100,11 +96,6 @@ nav > a{
 .flexRow{
   display: flex;
   flex-direction: row;
-<<<<<<< HEAD
-  gap:2%;
-}
-
-=======
   justify-content: space-evenly;
   gap:2%;
 }
@@ -117,17 +108,13 @@ nav > a{
   grid-column: 1/2;
 }
 
->>>>>>> 244f878b00350b3ffeb4153b83f06cca4d0454c4
 .info{
   display: grid;
   grid-template-columns: .6fr .4fr;
   grid-template-rows: .1fr .45fr .45fr;
 
   width:100%;
-<<<<<<< HEAD
-=======
   margin-left: var(--left-margin);
->>>>>>> 244f878b00350b3ffeb4153b83f06cca4d0454c4
 }
 
 .info > h1{
@@ -139,38 +126,23 @@ nav > a{
   grid-row: 2/3;
   grid-column: 1/2;
 
-<<<<<<< HEAD
-=======
   margin-top:auto;
   margin-bottom: auto;
 
->>>>>>> 244f878b00350b3ffeb4153b83f06cca4d0454c4
 }
 
 .employment{
   grid-row: 3/4;
   grid-column: 1/2;
-<<<<<<< HEAD
-=======
   margin-top:auto;
   margin-bottom: auto;
 
->>>>>>> 244f878b00350b3ffeb4153b83f06cca4d0454c4
 }
 
 .skillList{
   grid-column: 2/3;
   grid-row: 2/4;
   margin-left:0;
-<<<<<<< HEAD
-  max-width: 50%;
-}
-
-.skillList ul{
-  list-style: none;
-  margin-left:0;
-  padding-left:0;
-=======
   width:50%;
   text-align: center;
 
@@ -188,17 +160,12 @@ nav > a{
   padding-left:0;
 
   max-height: 50vh;
->>>>>>> 244f878b00350b3ffeb4153b83f06cca4d0454c4
 }
 
 .skillList li{
   padding:10px;
   margin:2px;
   border-style: solid;
-<<<<<<< HEAD
-  border-color: grey;
-  background-color: rgb(211, 211, 211);
-=======
   border-color: rgb(172, 172, 172);
   background-color: rgb(241, 241, 241);
   
@@ -228,6 +195,5 @@ margin-bottom: 5.5vh;}
 .card{
   background-color: var(--ivory);
   padding:10px;
->>>>>>> 244f878b00350b3ffeb4153b83f06cca4d0454c4
   
 }
