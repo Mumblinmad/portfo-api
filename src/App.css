@@ -57,7 +57,7 @@ nav{
 
 }
 
-nav > a{
+nav > button{
   text-align: center;
   background-color: var(--ivory);
   text-decoration: none;

@@ -13,20 +13,23 @@ class Display extends Component {
            
 
            case 'home':
-               return(<Home className={this.props.className} />);
-               break;
+            return(<Home className={this.props.className} />);
+               
 
             case 'port':
                 return(<Portfolio className={this.props.className} />);
-                break;
+                
 
             case 'info':
                 return(<Info className={this.props.className}/>)
-                break;
+                
 
             case 'more':
                 return(<More className={this.props.className}/>)
-                break;
+            
+            default:
+                return(<Home className={this.props.className} />);
+
 
            
 
