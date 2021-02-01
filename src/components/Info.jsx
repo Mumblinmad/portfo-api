@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class Info extends Component {
     render() {
-        const skills = ["Html","Css","Sass","Figma","Git","Javascript","React","Node.js","Mysqli","Mongo Db","C++","Python","Unity","Blender"];
+        const skills = ["Html","Css","Sass","Figma","Git","Javascript","React","Node.js","PHP","Mysqli","Mongo Db","C++","Python","Unity","Blender"];
          
         var skillList = skills.map(skill => <li>{skill}</li>)
 
@@ -33,17 +33,20 @@ class Info extends Component {
                     <p>Prudential</p>
                     <p>June 2018 - Present</p>
                     
-                    <p>Responsibilities primarily involve entering, formatting and collecting data about the
-                        local market that could then be used to direct advertising, recruiting, and sales
-                        efforts.</p>
+                        <ul>
+                        <li>Formatting and aggregating data about the
+                        local market</li>
+                        <li>Scheduled interviews for prospective hires</li>
+                        <li>Cold calling local professionals looking for work in finance</li>
+                    </ul>
                 </div>
                 <div className="emp">
                     <h1>Server</h1>
                     <p>Zea Rotisserie & Bar</p>
                     <p>September 2020 - Present</p>
                     <ul>
-                        <li>One responsibility</li>
-                        <li>Two responsibility</li>
+                        <li>Maintained Covid-19 sanitation standards</li>
+                        <li>Handle and document cash flow throughout the shift</li>
                         <li>Three responsibility</li>
                     </ul>
                 </div>

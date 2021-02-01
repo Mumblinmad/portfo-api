@@ -9,6 +9,7 @@ class NavBar extends Component {
     
     render() { 
         return <nav>
+            <h2>L.M. Dev</h2>
             <a onClick={this.handleClick} id="home" href="#">Home</a>
             <a onClick={this.handleClick} id="port" href="#">Port</a>
             <a onClick={this.handleClick} id="info" href="#">About</a>
