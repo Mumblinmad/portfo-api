@@ -22,7 +22,7 @@ class More extends Component {
                         <img src={linkedinIcon} alt=""/>
                         <img src={twitterIcon} alt=""/>
                     </div>
-                    <form className="card" action="">
+                    <form className="form card" action="">
                         <h3>How can I get in touch?</h3>
                         <p>Contact Information: (phone number, email, Instagram handle, etc.)</p>
                         <input type="text" placeHolder="How I can get in touch" name="How to get in touch" id=""/>
