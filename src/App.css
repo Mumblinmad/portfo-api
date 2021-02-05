@@ -2,10 +2,11 @@
 /* Desktop: 1920 x 1080, Laptop: 1280 x 720*/
 
 *{
-  --orange: #FF8C42;
+  --green: #16DB65;
   --light-gray: #ced3dc;
+  --red:#fd5f6d;
   --snowy: #f3f7f8;
-  --blue:#275dad;
+  --blue:#285291;
   --dark-gray: #5B616A;
   
   --left-margin:5%;
@@ -41,19 +42,31 @@ nav{
 
   height: 5vh;
 
-  background-color: var(--snowy);
+  z-index: 1;
+  
 }
 
 nav > * {
-  flex-basis: 20vw;
+  flex-basis: 12vw;
+  z-index: 1;
 }
 
 
 
 /* Home Page*/
 
+.verticalStripe{
+  position:absolute;
+  height:120vh;
+  width:28vw;
+  background-color: var(--red);
+  z-index: 0;
+  top:-10vh;
+  left:7.5vw;
+}
+
 .home{
-  overflow: hidden;
+ 
   
   height:auto;
   width:100vw;
@@ -61,7 +74,7 @@ nav > * {
 }
 
 .container{
-  height:90%;
+  height:100%;
   width:100%;
 
   
@@ -74,41 +87,55 @@ nav > * {
 
 .topText{
   font-family: var(--font-oswald);
-  font-size: 20vh;
+  font-size: 22vh;
   
-  grid-column: 1/3;
+  grid-column: 1/4;
   grid-row: 1/2;
 
   padding-left: 7vw;
   
   color:white;
   background-color: var(--blue);
+  margin:0;
+
+  z-index: 4;
+}
+
+.topText > h3{
+  font-size: 10vh;
+  font-weight: lighter;
+
+  margin-left: 1.1vw;
+  z-index: 3;
+
 }
 
 .bottomText{
   font-family: var(--font-mont);
   font-size: 5vh;
-  grid-column: 1/2;
-  grid-row: 2/3;
+ 
+  
   padding-left: 7vw;
   padding-top: 3vh;
-  background-color: var(--snowy);
+  
 }
 
 .callToAction{
-  width: 70ch;
+  width: 90ch;
   
   grid-row: 2/3;
-  grid-column: 2/3;
-  padding-left: 11vw;
+  grid-column: 1/2;
+  padding-left: 8vw;
   padding-top: 3vh;
   padding-right: 11vw;
 
-  background-color: var(--snowy);
+  
+
+  z-index: 2;
 }
 
 .callToAction > p{
-  font-size: 2vh;
+  font-size: 2.4vh;
 }
 
 .callToAction > button{
@@ -117,12 +144,32 @@ nav > * {
   font-size: 2vh;
 }
 
+/* Portfolio Page */
+  .port{
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows:  .1fr repeat(4,1fr);
 
+    min-height: 80vh;
+  }
+
+  .port > article{
+    grid-column:3/8;
+    grid-row: 2/5;
+  }
+
+  .buttonBox{
+    grid-row: 2/4;
+  }
 /*    Info Page   */
 
-.info{
+.info > h1 {
+  margin-left: 7.5vw;
+}
+
+.aboutGrid{
   display:grid;
-  grid-template-rows: 1fr .6fr;
+  grid-template-rows: 1fr .4fr;
   grid-template-columns: repeat(5,1fr);
 
   overflow-x: hidden;
@@ -134,7 +181,10 @@ nav > * {
 
   max-width: 15vw;
 
-  margin-left: 6.8vw;
+  margin-left: 7.5vw;
+  text-align: center;
+
+  background-color: var(--light-gray);
  
 }
 .skillList button{
@@ -155,8 +205,10 @@ nav > * {
   margin:auto;
   min-height: 35vh;
 
-  margin-left: 6.8vw;
-  margin-top: 4vh;
+  margin-left: 7.5vw;
+  padding-top: 4vh;
+
+  background-color: var(--light-gray);
 }
 
 .slug{
@@ -167,6 +219,10 @@ nav > * {
   background-color: var(--orange);
 
   padding:4%;
+}
+
+.slug > p {
+  max-width:60ch;
 }
 
 .slugButt{
@@ -196,6 +252,8 @@ nav > * {
 .flexRow > div{
   flex-basis: 24vw;
 }
+
+
 
 /* contact Grid*/
 

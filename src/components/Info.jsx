@@ -8,7 +8,8 @@ class Info extends Component {
 
         return (
             <div className={'info '+this.props.className}>
-
+            <h1>About</h1>
+            <div className="aboutGrid">
             <article className="card skillList">
                 <h1>Skills</h1>
                 <ul>
@@ -17,15 +18,15 @@ class Info extends Component {
             </article>
             <article className="slug">
                 <h1>The Goal</h1>
-                <p>Give small businesses the ability to have online presences indistiguishable from those maintained by large corporations. 
-                    The standards for how websites look, feel, and collect data change drastically every year, and it's costly for businesses to employ a dedicated
-                    web developer to create and maintain a small site. Linus Martin offers websites less than $200 dollars with indefinite free maintainance if something goes wrong.
+                <p>Give small businesses an online presences indistiguishable from corporate giants. 
+                    Many business owners don't have hours and hours of time to figure out how to build a website, but having a full-time
+                    web developer employed isn't always feasible. Linus Martin offers websites for less than $200 dollars with indefinite free maintainance if something goes wrong.
                 </p>
                 <button className="slugButt"> Sites I've Made </button>
             </article>
-            <div className="about">
-                <h1>About</h1>
-            <div className="flexColumn">
+            
+                
+            
             <article className="card education">
                 <h1>Education</h1>
                 <div className="flexRow">
@@ -68,7 +69,8 @@ class Info extends Component {
                 </div>
                 </div>
             </article>
-            </div>
+            
+            
             </div>
             
             </div>
