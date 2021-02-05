@@ -10,10 +10,11 @@ class NavBar extends Component {
     render() { 
         return <nav>
             <h2>L.M. Dev</h2>
-            <button onClick={this.handleClick} id="home" >Home</button>
-            <button onClick={this.handleClick} id="port" >Port</button>
-            <button onClick={this.handleClick} id="info" >About</button>
-            <button onClick={this.handleClick} id="more" >Contact</button>
+            <p onClick={this.handleClick} id="home">Home</p>
+            <p onClick={this.handleClick} id="port">Port</p>
+            <p onClick={this.handleClick} id="info">Info</p>
+            <p onClick={this.handleClick} id="more">About</p>
+            
         </nav>;
     }
 }
