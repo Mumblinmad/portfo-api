@@ -21,7 +21,7 @@ class Info extends Component {
                     The standards for how websites look, feel, and collect data change drastically every year, and it's costly for businesses to employ a dedicated
                     web developer to create and maintain a small site. Linus Martin offers websites less than $200 dollars with indefinite free maintainance if something goes wrong.
                 </p>
-                <button className="slugButt"> Sites I've Made -></button>
+                <button className="slugButt"> Sites I've Made </button>
             </article>
             <div className="about">
                 <h1>About</h1>
