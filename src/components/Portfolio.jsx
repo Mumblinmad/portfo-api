@@ -29,6 +29,8 @@ class Portfolio extends Component {
         this.setState({displayedProject:this.state.projects[id]})
     }
 
+    //TODO: make as many images for portfolio as strapi provides
+
     
     render() { 
 
@@ -45,17 +47,24 @@ class Portfolio extends Component {
             var dProj = this.state.displayedProject
                     return ( 
             <div className={"port "+this.props.mode}>
+                <div className="verticalStripe"></div>
+                <div className="horizontalStripe"></div>
+            <div className="portGrid">
             <h1>Portfolio</h1>
                 <div className="buttonBox">
+                    <h3>Projects</h3>
                 {renderList}
                 </div>
                 
-                <article>
+                <article className="projectShown">
                     <h1>{dProj.Title}</h1>
                     <p id='pDateCreated'>{dProj.DateCreated}</p>
                     <a href={dProj.HostedUrl} id='pHostedUrl'>{dProj.HostedUrl}</a>
                     <p id='pDescription'>{dProj.Description}</p>
+                    {console.log("localhost:1337"+ dProj.Images[0].url)}
+                    <img src={"http://localhost:1337"+ dProj.Images[1].url} alt=""/>
                 </article>
+                </div>
             </div> );
 
                 
@@ -64,10 +73,21 @@ class Portfolio extends Component {
     
         else{
         
-        return ( <div className={"port "+this.props.mode}>
-            <h1>Portfolio</h1>
-            <p>Loading.... </p>
-        </div> );}
+        return (<div className={"port "+this.props.mode}>
+        <div className="verticalStripe"></div>
+        <div className="horizontalStripe"></div>
+    <div className="portGrid">
+    <h1>Portfolio</h1>
+        <div className="buttonBox" style={{marginTop:"15%"}}>
+            <h3>Projects</h3>
+            <p>Loading Projects ...</p>
+        </div>
+        
+        <article className="projectShown" style={{marginTop:"8%"}}>
+            <h1>Loading Project details...</h1>
+        </article>
+        </div>
+    </div> );}
     }
 }
  

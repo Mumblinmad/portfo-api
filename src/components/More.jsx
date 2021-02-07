@@ -8,8 +8,13 @@ class More extends Component {
     render() {
         return (
             <div className={'more '+this.props.className}>
-                <h1>Contact</h1>
+                
+
+                <div className="verticalStripe"></div>
+                <div className="horizontalStripe"></div>
+
                 <div className="contactGrid">
+                <h1 className="contactTitle">Contact</h1>
                     <div className="personal card">
                         <h3>Personal</h3>
                         <p>Phone: 214 - 532 - 9560</p>
@@ -24,7 +29,8 @@ class More extends Component {
                     </div>
                     <form className="form card" action="">
                         <h3>How can I get in touch?</h3>
-                        <p>Contact Information: (phone number, email, Instagram handle, etc.)</p>
+                        <p>Contact Information: </p>
+                        <p>(phone number, email, Instagram handle, etc.)</p>
                         <input type="text" placeHolder="How I can get in touch" name="How to get in touch" id=""/>
                         <p>Message for Linus:</p>
                         <textarea name="" placeHolder="What you would like me to know" id="" cols="30" rows="10"></textarea>

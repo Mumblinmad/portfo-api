@@ -23,9 +23,7 @@
     "knex": "<0.20.0",
     "sqlite3": "latest"
   },
-  "author": {
-    "name": "A Strapi developer"
-  },
+  "author": "A Strapi developer",
   "strapi": {
     "uuid": "70b17a27-7254-41a2-a6f3-16a81893fcbc"
   },
@@ -33,5 +31,14 @@
     "node": ">=10.16.0 <=14.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mumblinmad/apibuildtrial.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mumblinmad/apibuildtrial/issues"
+  },
+  "homepage": "https://github.com/Mumblinmad/apibuildtrial#readme"
 }

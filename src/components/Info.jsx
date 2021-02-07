@@ -8,8 +8,11 @@ class Info extends Component {
 
         return (
             <div className={'info '+this.props.className}>
-            <h1>About</h1>
+           
             <div className="aboutGrid">
+                <div className="verticalStripe"></div>
+                <div className="horizontalStripe"></div>
+            <h1>About</h1>
             <article className="card skillList">
                 <h1>Skills</h1>
                 <ul>
@@ -18,10 +21,12 @@ class Info extends Component {
             </article>
             <article className="slug">
                 <h1>The Goal</h1>
-                <p>Give small businesses an online presences indistiguishable from corporate giants. 
-                    Many business owners don't have hours and hours of time to figure out how to build a website, but having a full-time
-                    web developer employed isn't always feasible. Linus Martin offers websites for less than $200 dollars with indefinite free maintainance if something goes wrong.
+                <p id="goal">Give small businesses an online presences indistiguishable from corporate giants. </p>
+                <p>
+                    Linus Martin offers websites using today's technologies
+                    for less than $200 dollars with indefinite free maintainance if something goes wrong.
                 </p>
+                
                 <button className="slugButt"> Sites I've Made </button>
             </article>
             
@@ -49,12 +54,10 @@ class Info extends Component {
                     <h1>Marketing Assistant</h1>
                     <p>Prudential</p>
                     <p>June 2018 - Present</p>
-                    
                         <ul>
                         <li>Formatting and aggregating data about the
                         local market</li>
                         <li>Scheduled interviews for prospective hires</li>
-                        <li>Cold calling local professionals looking for work in finance</li>
                     </ul>
                 </div>
                 <div className="emp">
@@ -64,7 +67,7 @@ class Info extends Component {
                     <ul>
                         <li>Maintained Covid-19 sanitation standards</li>
                         <li>Handle and document cash flow throughout the shift</li>
-                        <li>Three responsibility</li>
+                        
                     </ul>
                 </div>
                 </div>
